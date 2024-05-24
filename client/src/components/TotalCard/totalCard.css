@@ -1,0 +1,50 @@
+.totalcard {
+  width: 100%;
+  background-color: #7367f0 !important;
+  padding: 5px;
+  min-height: 200px;
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 2vh;
+  text-align: center;
+  animation: popup 1s ease;
+}
+.totalcard .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+.loadingEl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counts {
+  color: rgba(255, 255, 255, 0.766);
+  display: flex;
+  flex-direction: column;
+}
+.totalcard .imgClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.totalcard span {
+  font-size: 0.75rem;
+}
+.totalcard img {
+  height: 100px;
+  animation: rotate infinite 50s linear;
+  animation: popup infinite 3s linear;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

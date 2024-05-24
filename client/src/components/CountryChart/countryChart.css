@@ -1,0 +1,19 @@
+.countryChart {
+  animation: popup 1s ease;
+  border: 1px solid rgba(131, 131, 131, 0.309);
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: var(--color);
+}
+.countryChart h3,
+.countryChart p {
+  opacity: 0.7;
+}
+.countryChart svg {
+  width: 35vw;
+}

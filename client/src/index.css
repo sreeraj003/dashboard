@@ -1,0 +1,55 @@
+:root {
+  --background-color: rgba(255, 255, 255, 0.937);
+  --color: #2f3349;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::placeholder {
+  color: var(--color) !important;
+}
+body,
+a {
+  background-color: var(--background-color);
+  color: var(--color);
+  overflow-x: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.lightTheme {
+  --background-color: #2f3349;
+  --color: rgba(255, 255, 255, 0.937);
+}
+.darkTheme {
+  --background-color: rgba(255, 255, 255, 0.949);
+  --color: #2f3349;
+}
+
+body.lightTheme,
+body.darkTheme {
+  background-color: var(--background-color);
+  color: var(--color);
+}
+@keyframes popup {
+  0% {
+    scale: 1;
+  }
+  25% {
+    scale: 1.1;
+  }
+  75% {
+    scale: 0.9;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
