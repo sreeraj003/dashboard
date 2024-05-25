@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import Chart from "react-apexcharts";
 import getData from "../Api";
+import Loader from "../Loader";
 
 const Pestle = () => {
-    const [pestleCount, setCount] = useState([]);
+    const [pestleCount, setCount] = useState("");
 
     useEffect(() => {
         const fetchData = async () => {
@@ -80,15 +81,14 @@ const Pestle = () => {
         }
     ]), [pestleCount.countArray]);
 
-    return (
-        <div className="Pestle">
-            <div className="row">
-                <div className="mixed-chart">
-                    <Chart options={options} series={series} type="line" height={250} />
+    return pestleCount ?
+        < div className="Pestle"  >
+            < div className="row" >
+                <div className="mixed-chart" >
+                    <Chart style={{ border: "1px solid rgba(131, 131, 131, 0.309) ", borderRadius: "10px", padding: "10px" }} options={options} series={series} type="line" height={250} />
                 </div>
-            </div>
-        </div>
-    );
+            </div >
+        </div > : <div className="loader p - 0 m - 0" style={{ border: "1px solid black ", borderRadius: "10px", padding: "10px" }}> < Loader /></div >;
 };
 
 export default Pestle;

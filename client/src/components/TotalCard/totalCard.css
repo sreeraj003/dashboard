@@ -2,11 +2,11 @@
   width: 100%;
   background-color: #7367f0 !important;
   padding: 5px;
-  min-height: 200px;
+  min-height: 100%;
   color: white;
   border-radius: 5px;
   overflow: hidden;
-  margin-bottom: 2vh;
+
   text-align: center;
   animation: popup 1s ease;
 }

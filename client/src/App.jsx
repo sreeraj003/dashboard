@@ -33,13 +33,13 @@ function App() {
         </div>
         <div className="col-12 mt-3 bod col-lg-9 col-xl-10 col-md-10 col-sm-8 p-0">
           <div className="row p-0 m-0 ">
-            <div className="col-12 col-sm-6 p-0 m-0  ">
+            <div className="col-12 col-sm-6 p-3 m-0  ">
               <TotalCard></TotalCard>
             </div>
-            <div className=" col-12  col-sm-6 ">
+            <div className=" col-12  col-sm-6 p-3">
               <Likelihood></Likelihood>
             </div>
-            <div className="col-12 svg p-0 col-sm-6 col-md-6 ">
+            <div className="col-12 svg p-3  col-sm-6 col-md-6 ">
               {data && <MyD3Chart data={data}></MyD3Chart>}
             </div>
             {/* <div className="totCard col-12  col-sm-6 col-md-4 col-lg-4 col-xl-3  ">
