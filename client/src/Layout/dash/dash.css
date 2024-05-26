@@ -1,0 +1,13 @@
+::placeholder {
+  color: blueviolet;
+}
+
+@media only screen and (max-width: 575px) {
+  .svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.bod {
+  margin-top: 110px !important;
+}

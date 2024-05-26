@@ -1,10 +1,11 @@
 
-import { useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import "./NavBar.css"
 import { IoIosMoon, IoIosSunny } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 function NavBar() {
     const [darkTheme, setTheme] = useState(false);
+    const inputRef = useRef()
     const handleTheme = () => {
         if (!darkTheme) {
             document.body.classList.remove("darkTheme")
@@ -16,14 +17,14 @@ function NavBar() {
         setTheme(!darkTheme)
         console.log(darkTheme);
     }
+
     return (
         <>
             <nav className="navbar ps-4 pe-4">
                 <div className="container-fluid row p-0">
                     <a className="navbar-brand col-3" href="#"><b>BLACKOFFER</b></a>
                     <form className="d-flex col-4" role="search">
-                        <input className="form-control navSearch me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn" type="submit">< FaSearch /></button>
+
                     </form>
                     <div className="theme-set col-4">
                         <div className="theme-icon" onClick={() => handleTheme()}>{

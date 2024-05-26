@@ -13,7 +13,6 @@ const Pestle = () => {
         };
         fetchData();
     }, []);
-    console.log(pestleCount);
 
     const options = useMemo(() => ({
         chart: {

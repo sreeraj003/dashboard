@@ -1,6 +1,6 @@
 .side {
   background-color: white;
-  min-height: 80vh;
+  min-height: 70vh;
   justify-content: center;
   margin: 5px;
   border: 1px solid rgba(131, 131, 131, 0.309);
@@ -53,4 +53,8 @@
     background-color: transparent;
     color: var(--color);
   }
+}
+.side li:hover {
+  cursor: pointer;
+  color: white !important;
 }

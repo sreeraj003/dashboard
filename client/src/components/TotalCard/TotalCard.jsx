@@ -12,7 +12,6 @@ function TotalCard() {
         }
         fetchData()
     }, [])
-    console.log(data);
     return (
         <div className='totalcard'>
             {data ?

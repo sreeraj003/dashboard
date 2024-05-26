@@ -1,0 +1,16 @@
+.chart-container {
+  width: 100%; /* Adjust the width as needed */
+  height: 80vh !important; /* Set the height to 80% of the viewport height */
+  border: 1px solid rgba(131, 131, 131, 0.309);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .chart-container {
+    height: 60vh; /* Adjust the height for smaller screens */
+  }
+}

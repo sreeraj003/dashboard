@@ -1,0 +1,54 @@
+.bod {
+  margin-top: 110px !important;
+}
+::placeholder {
+  color: blueviolet;
+}
+
+@media only screen and (max-width: 575px) {
+  .svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.next {
+  width: 50%;
+  background-color: #6458f0;
+  color: white;
+  border: 1px solid rgba(131, 131, 131, 0.309) !important;
+}
+.postcardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.drops {
+  cursor: pointer;
+  max-height: 50vh;
+  overflow-y: auto;
+  width: 250px;
+}
+
+.drops li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.drops li:hover {
+  background-color: #f1f1f1;
+}
+.dropButton {
+  background-color: #6458f0;
+  color: white;
+  border: none !important;
+}
+.dropbutton:hover,
+.cls:hover {
+  border: 1px solid rgba(131, 131, 131, 0.309) !important;
+}
+.cls {
+  color: rgb(3, 0, 0);
+  border: none !important;
+  background-color: rgba(8, 22, 213, 0.251);
+}
