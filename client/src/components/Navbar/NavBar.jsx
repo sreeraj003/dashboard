@@ -1,11 +1,9 @@
 
-import { useCallback, useRef, useState } from "react";
+import { useState } from "react";
 import "./NavBar.css"
 import { IoIosMoon, IoIosSunny } from "react-icons/io";
-import { FaSearch } from "react-icons/fa";
 function NavBar() {
     const [darkTheme, setTheme] = useState(false);
-    const inputRef = useRef()
     const handleTheme = () => {
         if (!darkTheme) {
             document.body.classList.remove("darkTheme")
